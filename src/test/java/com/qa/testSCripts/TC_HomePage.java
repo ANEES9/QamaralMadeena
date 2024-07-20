@@ -78,6 +78,7 @@ public class TC_HomePage extends TestBase {
 	public void verifyGrowExponentiallyMenue() {
 
 		//verify grow exponentially section
+		System.out.println("ahahah");
 	}
 	
 	@Test(priority = 4)
