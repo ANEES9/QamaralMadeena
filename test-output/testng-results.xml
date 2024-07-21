@@ -2,60 +2,20 @@
 <testng-results ignored="7" total="8" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-21T01:19:18 IST" name="Default suite" finished-at="2024-07-21T01:19:36 IST" duration-ms="17244">
+  <suite started-at="2024-07-21T17:30:28 IST" name="Default suite" finished-at="2024-07-21T17:30:36 IST" duration-ms="7450">
     <groups>
     </groups>
-    <test started-at="2024-07-21T01:19:18 IST" name="Default test" finished-at="2024-07-21T01:19:36 IST" duration-ms="17244">
+    <test started-at="2024-07-21T17:30:28 IST" name="Default test" finished-at="2024-07-21T17:30:36 IST" duration-ms="7450">
       <class name="com.qa.testSCripts.TC_HomePage">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.testSCripts.TC_HomePage@2a3b5b47]" started-at="2024-07-21T01:19:18 IST" name="setup" finished-at="2024-07-21T01:19:26 IST" duration-ms="7581" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.testSCripts.TC_HomePage@35d019a3]" started-at="2024-07-21T17:30:28 IST" name="setup" finished-at="2024-07-21T17:30:32 IST" duration-ms="3945" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyNavigationMenue()[pri:1, instance:com.qa.testSCripts.TC_HomePage@2a3b5b47]" started-at="2024-07-21T01:19:26 IST" name="verifyNavigationMenue" finished-at="2024-07-21T01:19:34 IST" duration-ms="8394" status="PASS">
+        <test-method signature="verifyGrowExponentiallyMenue()[pri:3, instance:com.qa.testSCripts.TC_HomePage@35d019a3]" started-at="2024-07-21T17:30:32 IST" name="verifyGrowExponentiallyMenue" finished-at="2024-07-21T17:30:35 IST" duration-ms="2550" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyNavigationMenue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testSCripts.TC_HomePage@2a3b5b47]" started-at="2024-07-21T01:19:34 IST" name="tearDown" finished-at="2024-07-21T01:19:36 IST" duration-ms="1178" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-failed to laod expected [null] but found [https://qamaralmadeena.netlify.app/visa],
-failed to laod expected [https://qamaralmadeena.netlify.app/contact] but found [https://qamaralmadeena.netlify.app/umrah]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-failed to laod expected [null] but found [https://qamaralmadeena.netlify.app/visa],
-failed to laod expected [https://qamaralmadeena.netlify.app/contact] but found [https://qamaralmadeena.netlify.app/umrah]
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
-at com.qa.testSCripts.TC_HomePage.tearDown(TC_HomePage.java:34)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-at org.testng.internal.invokers.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:222)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:131)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:806)
-at org.testng.TestRunner.run(TestRunner.java:601)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        </test-method> <!-- verifyGrowExponentiallyMenue -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testSCripts.TC_HomePage@35d019a3]" started-at="2024-07-21T17:30:35 IST" name="tearDown" finished-at="2024-07-21T17:30:36 IST" duration-ms="902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
