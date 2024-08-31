@@ -1,4 +1,4 @@
-package com.qa.testSCripts;
+package Base;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -24,7 +24,7 @@ public class TestBase {
 	public Properties prop;
 
 	public WebDriver driver;
-	SoftAssert softAssert = new SoftAssert();
+	public SoftAssert softAssert = new SoftAssert();
 	// WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(TIMEOUT));
 
 	public WebDriver initializeBrowser() throws IOException {

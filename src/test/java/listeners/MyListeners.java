@@ -8,8 +8,9 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.qa.testSCripts.TestBase;
 import com.qa.utility.ExtentReporter;
+
+import Base.TestBase;
 
 
 
@@ -19,16 +20,17 @@ public class MyListeners extends TestBase implements ITestListener {
 	ExtentTest extentTest;
 
 	@Override
-	public void onTestStart(ITestResult result) {
+	public void onTestStart(ITestResult testName) {
 		
-		extentTest = extentReport.createTest(result.getName());
+		extentTest = extentReport.createTest(testName.getName());
+		extentTest.log(Status.INFO, testName +"started started");
 		
 	}
 
 	@Override
-	public void onTestSuccess(ITestResult result) {
+	public void onTestSuccess(ITestResult testName) {
 		
-		extentTest.log(Status.PASS,"Test Passed");
+		extentTest.log(Status.PASS, testName +"started success");
 		
 	}
 
@@ -61,7 +63,7 @@ public class MyListeners extends TestBase implements ITestListener {
 
 	@Override
 	public void onTestSkipped(ITestResult result) {
-		
+		extentTest.log(Status.SKIP,"Test skipped");
 	}
 
 	@Override
@@ -75,8 +77,10 @@ public class MyListeners extends TestBase implements ITestListener {
 	}
 
 	@Override
-	public void onStart(ITestContext context) {
-		
+	public void onStart(ITestContext result) {
+		String testName =result.getName();
+		 extentTest = extentReport.createTest(testName);
+		extentTest.log(Status.INFO, testName +"started executing");
 	}
 
 	@Override
