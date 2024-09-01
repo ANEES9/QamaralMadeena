@@ -11,9 +11,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import pageobjects.AccountPage;
-import pageobjects.SearchPage;
-
 public class DemoHomePage {
 
 	WebDriver driver;
@@ -76,14 +73,14 @@ public class DemoHomePage {
 
 	public ContactPage clickOnContactMenu() {
 		contactField.click();
-		
+
 		return new ContactPage(driver);
 	}
 
 	// -----------------------------Navigation Menue ENDS
 	// ------------------------------------------//
-	
-	
+
+
 	// -----------------------------Hero Widget
 		// Starts------------------------------------------//
 
@@ -104,7 +101,7 @@ public class DemoHomePage {
 		// -----------------------------Hero Widget
 		// ends------------------------------------------//
 
-		
+
 		// -------------------------------Growing Exponentially
 		// Starts------------------------------------------//
 
@@ -141,16 +138,16 @@ public class DemoHomePage {
 
 		// -------------------------------Growing Exponentially Ends
 		// ------------------------------------------//
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
+
+
+
+
+
+
+
+
+
 		public void performAction2() {
 			// action class for moving down the page
 			Actions builder = new Actions(driver);
@@ -160,7 +157,7 @@ public class DemoHomePage {
 			scrolldownTo.perform();
 
 		}
-		
+
 		public void performAction3() {
 			// action class for moving down the page
 			Actions builder = new Actions(driver);
@@ -170,7 +167,7 @@ public class DemoHomePage {
 			scrolldownTo.perform();
 
 		}
-		
+
 		public void performAction4() {
 			// action class for moving down the page
 			Actions builder = new Actions(driver);
@@ -179,7 +176,7 @@ public class DemoHomePage {
 			Action scrolldownTo = builder.moveToElement(ele3).click().sendKeys(Keys.PAGE_DOWN).build();
 			scrolldownTo.perform();
 		}
-			
+
 			public void performAction5() {
 				// action class for moving down the page
 				Actions builder = new Actions(driver);

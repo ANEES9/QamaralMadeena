@@ -170,20 +170,20 @@ public class TC_HomePage extends TestBase {
 		// Verify heading and tile
 
 		// verify clicking on three offer packages
-		
+
 		//*[@class="popular-list"]
 		//h3[@class=\"card-title\"]
 		Thread.sleep(5000);
 		List <WebElement> elements = driver.findElements(By.xpath("//*[@class='popular-list']"));
 		 // Iterate over the elements list
-    
-        	
-		
-	
+
+
+
+
 		for(WebElement ek : elements) {
 		String listname = ek.getText();
 		//System.out.println(listname);
-		
+
 		if(listname.contains("Umrah By Bus"))
 		{
 			Thread.sleep(2000);
@@ -227,35 +227,35 @@ public class TC_HomePage extends TestBase {
 		scrollDownTo("For Any Business Needs");
 		Thread.sleep(2000);
 		// Verify heading and tile
-	
+
 		Assert.assertEquals(homePages.get_TitleOfBusiness_Esssential(), "Business Esssential",
 				"failed to laod Destination title text");
 		Assert.assertEquals(homePages.Get_SubTitleOfBusiness_Esssential(), "For Any Business Needs",
 				"failed to laod Choose Your Place text");
 
 		// verify clicking on three Business services
-		
+
 		//driver.findElement(By.xpath("//*[contains(text(),'New Business Setup')]")).click();
 		//Thread.sleep(9000);
-		
+
 		WebElement element22 = driver.findElement(By.xpath("//*[contains(text(),'New Business Setup')]"));
 
 		Actions actions = new Actions(driver);
 
 		actions.moveToElement(element22).click().perform();
-		
+
 		//1. verify clicking on 1st section under Business
 		Thread.sleep(2000);
 		homePages.ClickOnNewBusinessSetup();
 		Thread.sleep(2000);
 		scrollDownTo("For Any Business Needs");
-		
+
 		//2. verify clicking on 2nd section under Business
 		Thread.sleep(2000);
 		homePages.ClickOnTranslationService();
 		Thread.sleep(2000);
 		scrollDownTo("For Any Business Needs");
-		
+
 		//3. verify clicking on 3rd section under Business
 		Thread.sleep(2000);
 		homePages.ClickOnAttestation();
@@ -322,4 +322,36 @@ public class TC_HomePage extends TestBase {
 
 	}
 
+
 }
+
+/*
+ *
+ 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.6.1</version>
+			<scope>compile</scope>
+		</dependency>
+		<!--
+		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.6.2</version>
+		</dependency>
+
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java --><!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<!--
+		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.141.59</version>
+		</dependency>
+
+ */

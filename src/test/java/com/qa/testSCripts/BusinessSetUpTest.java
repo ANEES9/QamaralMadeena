@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 import Base.TestBase;
 
 public class BusinessSetUpTest extends TestBase {
-	
+
 	@BeforeClass
 	public void setup() throws IOException {
 
@@ -24,34 +24,34 @@ public class BusinessSetUpTest extends TestBase {
 		driver.quit();
 		softAssert.assertAll();
 	}
-	
-	
+
+
 	@Test(priority = 1)
 	public void verifyNewBusinessSetupSection() {
-		
-		/* 
+
+		/*
 		 * UmrahPackagePage umrahPackagePage = new UmrahPackagePage(driver);
 		 * ContactPage contactPage = umrahPackagePage.clickOnContactUsButton();
 		 */
 	}
-	
+
 
 	@Test(priority = 2)
 	public void verifyTranslationServiceSection() {
-		
-		/* 
+
+		/*
 		 * UmrahPackagePage umrahPackagePage = new UmrahPackagePage(driver);
 		 * ContactPage contactPage = umrahPackagePage.clickOnContactUsButton();
 		 */
 	}
 
 	/**
-	 * 
+	 *
 	 */
 	@Test(priority = 3)
 	public void verifyAttestationSection() {
-		
-		/* 
+
+		/*
 		 * UmrahPackagePage umrahPackagePage = new UmrahPackagePage(driver);
 		 * ContactPage contactPage = umrahPackagePage.clickOnContactUsButton();
 		 */

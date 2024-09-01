@@ -18,8 +18,6 @@ import com.qa.pages.UmrahPackagePage;
 import com.qa.pages.VisaServicePage;
 
 import Base.TestBase;
-import pageobjects.HomePage;
-import pageobjects.LoginPage;
 
 public class HomePageTest extends TestBase {
 
@@ -82,18 +80,18 @@ public class HomePageTest extends TestBase {
 
 	@Test(priority = 2)
 	public void verifyHeroWidgetMenue() {
-		
+
 		DemoHomePage demoHomePage = new DemoHomePage(driver);
 
 		// Verify heading and tile
-			
-				Assert.assertEquals(demoHomePage.getHeroWidgetTitle(), "PACKAGE", "failed to laod Package text");
-				Reporter.log("User able to see Umrah package Title and Sub Title");
 
-				// verify contact us button
-				demoHomePage.ClickOnContactUs();
-				Reporter.log("User clicked on Contact us button in hero widget module");
-	
+		Assert.assertEquals(demoHomePage.getHeroWidgetTitle(), "PACKAGE", "failed to laod Package text");
+		Reporter.log("User able to see Umrah package Title and Sub Title");
+
+		// verify contact us button
+		demoHomePage.ClickOnContactUs();
+		Reporter.log("User clicked on Contact us button in hero widget module");
+
 	}
 
 	@Test(priority = 3)
@@ -132,59 +130,51 @@ public class HomePageTest extends TestBase {
 	public void verifyFooterMenue() throws InterruptedException {
 	}
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	@Test(priority = 7)
+	public void verifyFooterMenue2() throws InterruptedException {
+	}
+
+
 	// ------------------- Extra methodss--------------------------
 
-		public void verifyAllCounterSection() {
-			DemoHomePage demoHomePage = new DemoHomePage(driver);
-			List<WebElement> counter = demoHomePage.getlistOfAllCounters();
-			for (WebElement ListOfCounter : counter) {
-				System.out.println(ListOfCounter.getText());
-				if (ListOfCounter.getText().equalsIgnoreCase("Business SetUp")) {
-					Assert.assertTrue(true);
-				} else if (ListOfCounter.getText().equalsIgnoreCase("Umrah Performed")) {
-					Assert.assertTrue(true);
+	public void verifyAllCounterSection() {
+		DemoHomePage demoHomePage = new DemoHomePage(driver);
+		List<WebElement> counter = demoHomePage.getlistOfAllCounters();
+		for (WebElement ListOfCounter : counter) {
+			System.out.println(ListOfCounter.getText());
+			if (ListOfCounter.getText().equalsIgnoreCase("Business SetUp")) {
+				Assert.assertTrue(true);
+			} else if (ListOfCounter.getText().equalsIgnoreCase("Umrah Performed")) {
+				Assert.assertTrue(true);
 
-				} else if (ListOfCounter.getText().equalsIgnoreCase("Visa Services")) {
-					Assert.assertTrue(true);
+			} else if (ListOfCounter.getText().equalsIgnoreCase("Visa Services")) {
+				Assert.assertTrue(true);
 
-				} else if (ListOfCounter.getText().equalsIgnoreCase("International Awards")) {
-					Assert.assertTrue(true);
-				}
+			} else if (ListOfCounter.getText().equalsIgnoreCase("International Awards")) {
+				Assert.assertTrue(true);
 			}
 		}
+	}
 
-		public void scrollDownTo(String pageTitle) throws InterruptedException {
-			DemoHomePage demoHomePage = new DemoHomePage(driver);
-			if (pageTitle.contains("GrowExponentioally")) {
-				demoHomePage.performAction();
-				Thread.sleep(2000);
-			} else if (pageTitle.contains("Choose Your Place")) {
-				demoHomePage.performAction2();
+	public void scrollDownTo(String pageTitle) throws InterruptedException {
+		DemoHomePage demoHomePage = new DemoHomePage(driver);
+		if (pageTitle.contains("GrowExponentioally")) {
+			demoHomePage.performAction();
+			Thread.sleep(2000);
+		} else if (pageTitle.contains("Choose Your Place")) {
+			demoHomePage.performAction2();
 
-			} else if (pageTitle.contains("Most Popular Tours")) {
-				demoHomePage.performAction3();
+		} else if (pageTitle.contains("Most Popular Tours")) {
+			demoHomePage.performAction3();
 
-			} else if (pageTitle.contains("For Any Business Needs")) {
-				demoHomePage.performAction3();
+		} else if (pageTitle.contains("For Any Business Needs")) {
+			demoHomePage.performAction3();
 
-			} else if (pageTitle.contains("QmarAlMadeena")) {
-				demoHomePage.performAction3();
+		} else if (pageTitle.contains("QmarAlMadeena")) {
+			demoHomePage.performAction3();
 
-			}
-		
 		}
-		
-		
-		
-		
+
+	}
+
 }

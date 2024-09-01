@@ -127,11 +127,11 @@ public class HomePage {
 
 	// -------------------------------Growing Exponentially Ends
 	// ------------------------------------------//
-	
-	
-	
+
+
+
 	// -------------- additional methods for Choose Your place section----------//
-	
+
 	//title
 	@FindBy(xpath = "//*[contains(text(),'Destinations')]")
 	private static WebElement titleOfDestination_ChooseYourPlace;
@@ -147,7 +147,7 @@ public class HomePage {
 	public String Get_SubTitleOfDestination_ChooseYourPlace() {
 		return SubTitleOfDestination_ChooseYourPlace.getText();
 	}
-	
+
 	//Listing paragraph tag
 	@FindBy(xpath = "//p[@class='card-subtitle']")
 	private List<WebElement> listOfTwoElelementInCYP;
@@ -155,13 +155,13 @@ public class HomePage {
 	public List<WebElement> Get_listOfTwoElelementInCYP() {
 		return listOfTwoElelementInCYP;
 	}
-	
+
 
 	// -------------- END of  Choose Your place section----------//
-	
-	
+
+
 	// -------------- additional methods for Choose Your place section----------//
-	
+
 	//title
 	@FindBy(xpath = "//*[contains(text(),'Business Esssential')]")
 	private static WebElement TitleOfBusiness_Esssential;
@@ -176,10 +176,10 @@ public class HomePage {
 
 	public String Get_SubTitleOfBusiness_Esssential() {
 		return SubTitleOfBusiness_Esssential.getText();
-				
+
 	}
-	
-	
+
+
 
 	//private void VerifyClickingonSectionOneUnderBusiness() {
 		// TODO Auto-generated method stub
@@ -188,37 +188,37 @@ public class HomePage {
 
 		public void ClickOnNewBusinessSetup() {
 			NewBusinessSetup.click();}
-			
-			
+
+
 			@FindBy(xpath = "//a[normalize-space()='Translation Service']")
 			private WebElement TranslationService;
 
 			public void ClickOnTranslationService() {
 				TranslationService.click();}
-				
-				
+
+
 				@FindBy(xpath = "//a[normalize-space()='Attestation']")
 				private WebElement Attestation;
 
 				public void ClickOnAttestation() {
 					Attestation.click();
-		
+
 	}
 
 	// -------------- END OF Choose Your place section----------//
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
+
+
+
 	public void performAction2() {
 		// action class for moving down the page
 		Actions builder = new Actions(driver);
@@ -228,7 +228,7 @@ public class HomePage {
 		scrolldownTo.perform();
 
 	}
-	
+
 	public void performAction3() {
 		// action class for moving down the page
 		Actions builder = new Actions(driver);
@@ -238,7 +238,7 @@ public class HomePage {
 		scrolldownTo.perform();
 
 	}
-	
+
 	public void performAction4() {
 		// action class for moving down the page
 		Actions builder = new Actions(driver);
@@ -247,7 +247,7 @@ public class HomePage {
 		Action scrolldownTo = builder.moveToElement(ele3).click().sendKeys(Keys.PAGE_DOWN).build();
 		scrolldownTo.perform();
 	}
-		
+
 		public void performAction5() {
 			// action class for moving down the page
 			Actions builder = new Actions(driver);

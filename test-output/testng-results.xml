@@ -11,20 +11,20 @@
       <![CDATA[User able to see Title and Sub Title ]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-08-31T14:08:54 IST" name="QM" finished-at="2024-08-31T14:09:13 IST" duration-ms="18966">
+  <suite started-at="2024-09-01T00:37:44 IST" name="Default suite" finished-at="2024-09-01T00:38:08 IST" duration-ms="24339">
     <groups>
     </groups>
-    <test started-at="2024-08-31T14:08:54 IST" name="Test" finished-at="2024-08-31T14:09:13 IST" duration-ms="18966">
+    <test started-at="2024-09-01T00:37:44 IST" name="Default test" finished-at="2024-09-01T00:38:08 IST" duration-ms="24339">
       <class name="com.qa.testSCripts.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.testSCripts.HomePageTest@1df8b5b8]" started-at="2024-08-31T14:08:54 IST" name="setup" finished-at="2024-08-31T14:09:01 IST" duration-ms="6944" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.testSCripts.HomePageTest@5f8edcc5]" started-at="2024-09-01T00:37:44 IST" name="setup" finished-at="2024-09-01T00:37:55 IST" duration-ms="10906" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyHeaderMenue()[pri:1, instance:com.qa.testSCripts.HomePageTest@1df8b5b8]" started-at="2024-08-31T14:09:01 IST" name="verifyHeaderMenue" finished-at="2024-08-31T14:09:10 IST" duration-ms="8694" status="PASS">
+        <test-method signature="verifyHeaderMenue()[pri:1, instance:com.qa.testSCripts.HomePageTest@5f8edcc5]" started-at="2024-09-01T00:37:55 IST" name="verifyHeaderMenue" finished-at="2024-09-01T00:38:05 IST" duration-ms="10052" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeaderMenue -->
-        <test-method signature="verifyHeroWidgetMenue()[pri:2, instance:com.qa.testSCripts.HomePageTest@1df8b5b8]" started-at="2024-08-31T14:09:10 IST" name="verifyHeroWidgetMenue" finished-at="2024-08-31T14:09:10 IST" duration-ms="70" status="PASS">
+        <test-method signature="verifyHeroWidgetMenue()[pri:2, instance:com.qa.testSCripts.HomePageTest@5f8edcc5]" started-at="2024-09-01T00:38:05 IST" name="verifyHeroWidgetMenue" finished-at="2024-09-01T00:38:05 IST" duration-ms="66" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[User able to see Umrah package Title and Sub Title]]>
@@ -34,30 +34,30 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyHeroWidgetMenue -->
-        <test-method signature="verifyGrowExponentiallyMenue()[pri:3, instance:com.qa.testSCripts.HomePageTest@1df8b5b8]" started-at="2024-08-31T14:09:10 IST" name="verifyGrowExponentiallyMenue" finished-at="2024-08-31T14:09:12 IST" duration-ms="2720" status="PASS">
+        <test-method signature="verifyGrowExponentiallyMenue()[pri:3, instance:com.qa.testSCripts.HomePageTest@5f8edcc5]" started-at="2024-09-01T00:38:05 IST" name="verifyGrowExponentiallyMenue" finished-at="2024-09-01T00:38:08 IST" duration-ms="2777" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[User able to see Title and Sub Title ]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyGrowExponentiallyMenue -->
-        <test-method signature="verifyOurServicesMenue()[pri:4, instance:com.qa.testSCripts.HomePageTest@1df8b5b8]" started-at="2024-08-31T14:09:12 IST" name="verifyOurServicesMenue" finished-at="2024-08-31T14:09:12 IST" duration-ms="7" status="PASS">
+        <test-method signature="verifyOurServicesMenue()[pri:4, instance:com.qa.testSCripts.HomePageTest@5f8edcc5]" started-at="2024-09-01T00:38:08 IST" name="verifyOurServicesMenue" finished-at="2024-09-01T00:38:08 IST" duration-ms="5" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyOurServicesMenue -->
-        <test-method signature="verifyAboutMenue()[pri:5, instance:com.qa.testSCripts.HomePageTest@1df8b5b8]" started-at="2024-08-31T14:09:12 IST" name="verifyAboutMenue" finished-at="2024-08-31T14:09:12 IST" duration-ms="4" status="PASS">
+        <test-method signature="verifyAboutMenue()[pri:5, instance:com.qa.testSCripts.HomePageTest@5f8edcc5]" started-at="2024-09-01T00:38:08 IST" name="verifyAboutMenue" finished-at="2024-09-01T00:38:08 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAboutMenue -->
-        <test-method signature="verifyFooterMenue()[pri:6, instance:com.qa.testSCripts.HomePageTest@1df8b5b8]" started-at="2024-08-31T14:09:12 IST" name="verifyFooterMenue" finished-at="2024-08-31T14:09:12 IST" duration-ms="7" status="PASS">
+        <test-method signature="verifyFooterMenue()[pri:6, instance:com.qa.testSCripts.HomePageTest@5f8edcc5]" started-at="2024-09-01T00:38:08 IST" name="verifyFooterMenue" finished-at="2024-09-01T00:38:08 IST" duration-ms="4" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFooterMenue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testSCripts.HomePageTest@1df8b5b8]" started-at="2024-08-31T14:09:12 IST" name="tearDown" finished-at="2024-08-31T14:09:13 IST" duration-ms="414" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testSCripts.HomePageTest@5f8edcc5]" started-at="2024-09-01T00:38:08 IST" name="tearDown" finished-at="2024-09-01T00:38:08 IST" duration-ms="429" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testSCripts.HomePageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- QM -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
