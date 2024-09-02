@@ -46,9 +46,7 @@ public class HomePageTest extends TestBase {
 	public void verifyHeaderMenue() throws Throwable {
 
 		  DemoHomePage demoHomePage = new DemoHomePage(driver);
-	
-
-		  WebDriverWait wait =new WebDriverWait(driver,10) ;
+			  WebDriverWait wait =new WebDriverWait(driver,10) ;
 
 	      driver.findElement(By.xpath("//*[@class='navegation-items']//a[2]")).click();
 	      driver.findElement(By.xpath("//*[@class='navegation-items']//a[3]")).click();
