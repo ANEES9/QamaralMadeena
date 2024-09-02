@@ -34,7 +34,7 @@ public class DemoHomePage {
 
 	}
 
-	@FindBy(xpath = "//*[@class='navegation-items']//a[2]")
+	@FindBy(xpath = "//a[normalize-space()='Visa Service']")
 	public WebElement visaField;
 
 	public void clickOnVisaServiceMenu() {
@@ -43,7 +43,7 @@ public class DemoHomePage {
 
 	}
 
-	@FindBy(xpath = "//*[@class='navegation-items']//a[3]")
+	@FindBy(xpath = "//div[@class='navegation-items']//a[normalize-space()='Umrah Package']")
 	public WebElement UmrahField;
 
 	public UmrahPackagePage clickOnUmrahPackageMenu() {

@@ -52,9 +52,9 @@ public class HomePageTest extends TestBase {
 	      
 
 	        // 1. Click on Visa page and assert
-	//        WebElement visaMenu = wait.until(ExpectedConditions.elementToBeClickable(demoHomePage.visaField));
-//	        visaMenu.click();
-	//        softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("visaURl"), "Failed to open Visa Services");
+	        WebElement visaMenu = wait.until(ExpectedConditions.elementToBeClickable(demoHomePage.visaField));
+	        visaMenu.click();
+	        softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("visaURl"), "Failed to open Visa Services");
 
 	        // 2. Click on Umrah page and assert
 	        WebElement umrahMenu = wait.until(ExpectedConditions.elementToBeClickable(demoHomePage.UmrahField));
