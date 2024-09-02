@@ -35,16 +35,16 @@ public class DemoHomePage {
 	}
 
 	@FindBy(xpath = "//*[@class='navegation-items']//a[2]")
-	private WebElement visaField;
+	public WebElement visaField;
 
-	public VisaServicePage clickOnVisaServiceMenu() {
+	public void clickOnVisaServiceMenu() {
 		visaField.click();
-		return new VisaServicePage(driver);
+		
 
 	}
 
 	@FindBy(xpath = "//*[@class='navegation-items']//a[3]")
-	private WebElement UmrahField;
+	public WebElement UmrahField;
 
 	public UmrahPackagePage clickOnUmrahPackageMenu() {
 		UmrahField.click();
@@ -53,7 +53,7 @@ public class DemoHomePage {
 	}
 
 	@FindBy(xpath = "//*[@class='navegation-items']//a[4]")
-	private WebElement BusinessField;
+	public WebElement BusinessField;
 
 	public BusinessSetupPage clickOnBusinessSetupMenu() {
 		BusinessField.click();
@@ -62,14 +62,14 @@ public class DemoHomePage {
 	}
 
 	@FindBy(xpath = "//*[@class='navegation-items']//a[5]")
-	private WebElement blogField;
+	public WebElement blogField;
 
 	public void clickOnBlogMenu() {
 		blogField.click();
 	}
 
 	@FindBy(xpath = "//*[@class='navegation-items']//a[6]")
-	private WebElement contactField;
+	public WebElement contactField;
 
 	public ContactPage clickOnContactMenu() {
 		contactField.click();
