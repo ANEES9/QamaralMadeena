@@ -46,37 +46,32 @@ public class HomePageTest extends TestBase {
 	public void verifyHeaderMenue() throws Throwable {
 
 		  DemoHomePage demoHomePage = new DemoHomePage(driver);
-			  WebDriverWait wait =new WebDriverWait(driver,10) ;
 
 
+				// 1. click on Visa page and assert
+			
+				demoHomePage.clickOnVisaServiceMenu();
+				softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("visaURl"), "failed to Visa Services");
 
-	  // 1. Click on Visa page and assert
-	        WebElement visaMenu = wait.until(ExpectedConditions.elementToBeClickable(demoHomePage.visaField));
-	        visaMenu.click();
-	        softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("visaURl"), "Failed to open Visa Services");
+				// 2. click on Umrah page and assert
+				 demoHomePage.clickOnUmrahPackageMenu();
+				softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("umrahURL"), "failed to laod Umrah services");
 
-	        // 2. Click on Umrah page and assert
-	        WebElement umrahMenu = wait.until(ExpectedConditions.elementToBeClickable(demoHomePage.UmrahField));
-	        umrahMenu.click();
-	        softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("umrahURL"), "Failed to load Umrah services");
+				// 3. click on Business page and assert
+				 demoHomePage.clickOnBusinessSetupMenu();
+				softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("businessURL"), "failed to Business services");
 
-	        // 3. Click on Business page and assert
-	        WebElement businessMenu = wait.until(ExpectedConditions.elementToBeClickable(demoHomePage.BusinessField));
-	        businessMenu.click();
-	        softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("businessURL"), "Failed to open Business services");
+				// 4. click on Blog page and assert
+				demoHomePage.clickOnBlogMenu();
+				softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("blogURL"), "failed to Blog services");
 
-	        // 4. Click on Blog page and assert
-	        WebElement blogMenu = wait.until(ExpectedConditions.elementToBeClickable(demoHomePage.blogField));
-	        blogMenu.click();
-	        softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("blogURL"), "Failed to open Blog services");
+				// 5. click on Contact page and assert
+				 demoHomePage.clickOnContactMenu();
+				softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("contactURL"),
+						"failed to laod contact services");
 
-	        // 5. Click on Contact page and assert
-	        WebElement contactMenu = wait.until(ExpectedConditions.elementToBeClickable(demoHomePage.contactField));
-	        contactMenu.click();
-	        softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("contactURL"), "Failed to load Contact services");
-
-	        // Navigate back to Home Page
-	        demoHomePage.ClickOnHome();
+				// Navigate back to Home Page
+				demoHomePage.ClickOnHome();
 	    }
 
 

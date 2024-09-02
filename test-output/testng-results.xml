@@ -1,21 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="7" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[User able to see Umrah package Title and Sub Title]]>
+    </line>
+    <line>
+      <![CDATA[User clicked on Contact us button in hero widget module]]>
+    </line>
+    <line>
+      <![CDATA[User able to see Title and Sub Title ]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-09-02T23:56:22 IST" name="Default suite" finished-at="2024-09-02T23:56:32 IST" duration-ms="10124">
+  <suite started-at="2024-09-03T00:46:31 IST" name="Default suite" finished-at="2024-09-03T00:46:52 IST" duration-ms="21157">
     <groups>
     </groups>
-    <test started-at="2024-09-02T23:56:22 IST" name="Default test" finished-at="2024-09-02T23:56:32 IST" duration-ms="10124">
+    <test started-at="2024-09-03T00:46:31 IST" name="Default test" finished-at="2024-09-03T00:46:52 IST" duration-ms="21157">
       <class name="com.qa.testSCripts.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.testSCripts.HomePageTest@2898ac89]" started-at="2024-09-02T23:56:22 IST" name="setup" finished-at="2024-09-02T23:56:28 IST" duration-ms="5554" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:31 IST" name="setup" finished-at="2024-09-03T00:46:38 IST" duration-ms="7610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyHeaderMenue()[pri:1, instance:com.qa.testSCripts.HomePageTest@2898ac89]" started-at="2024-09-02T23:56:28 IST" name="verifyHeaderMenue" finished-at="2024-09-02T23:56:32 IST" duration-ms="4190" status="PASS">
+        <test-method signature="verifyHeaderMenue()[pri:1, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:38 IST" name="verifyHeaderMenue" finished-at="2024-09-03T00:46:49 IST" duration-ms="10697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyHeaderMenue -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testSCripts.HomePageTest@2898ac89]" started-at="2024-09-02T23:56:32 IST" name="tearDown" finished-at="2024-09-02T23:56:32 IST" duration-ms="326" status="PASS">
+        <test-method signature="verifyHeroWidgetMenue()[pri:2, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:49 IST" name="verifyHeroWidgetMenue" finished-at="2024-09-03T00:46:49 IST" duration-ms="50" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[User able to see Umrah package Title and Sub Title]]>
+            </line>
+            <line>
+              <![CDATA[User clicked on Contact us button in hero widget module]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyHeroWidgetMenue -->
+        <test-method signature="verifyGrowExponentiallyMenue()[pri:3, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:49 IST" name="verifyGrowExponentiallyMenue" finished-at="2024-09-03T00:46:51 IST" duration-ms="2432" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[User able to see Title and Sub Title ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyGrowExponentiallyMenue -->
+        <test-method signature="verifyOurServicesMenue()[pri:4, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:51 IST" name="verifyOurServicesMenue" finished-at="2024-09-03T00:46:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOurServicesMenue -->
+        <test-method signature="verifyAboutMenue()[pri:5, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:51 IST" name="verifyAboutMenue" finished-at="2024-09-03T00:46:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAboutMenue -->
+        <test-method signature="verifyFooterMenue()[pri:6, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:51 IST" name="verifyFooterMenue" finished-at="2024-09-03T00:46:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterMenue -->
+        <test-method signature="verifyFooterMenue2()[pri:7, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:51 IST" name="verifyFooterMenue2" finished-at="2024-09-03T00:46:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFooterMenue2 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:51 IST" name="tearDown" finished-at="2024-09-03T00:46:52 IST" duration-ms="284" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
