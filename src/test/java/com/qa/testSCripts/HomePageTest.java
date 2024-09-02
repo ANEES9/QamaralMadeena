@@ -39,20 +39,21 @@ public class HomePageTest extends TestBase {
 	}
 
 	@Test(priority = 1)
-	public void verifyHeaderMenue() {
+	public void verifyHeaderMenue() throws Throwable {
 
 		DemoHomePage demoHomePage = new DemoHomePage(driver);
 
 		// 1. click on Visa page and assert
-		VisaServicePage visaServicePage = demoHomePage.clickOnVisaServiceMenu();
+		Thread.sleep(5000);
+		demoHomePage.clickOnVisaServiceMenu();
 		softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("visaURl"), "failed to Visa Services");
 
 		// 2. click on Umrah page and assert
-		UmrahPackagePage umrahPackagePage = demoHomePage.clickOnUmrahPackageMenu();
+		 demoHomePage.clickOnUmrahPackageMenu();
 		softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("umrahURL"), "failed to laod Umrah services");
 
 		// 3. click on Business page and assert
-		BusinessSetupPage businessSetupPage = demoHomePage.clickOnBusinessSetupMenu();
+		 demoHomePage.clickOnBusinessSetupMenu();
 		softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("businessURL"), "failed to Business services");
 
 		// 4. click on Blog page and assert
@@ -60,7 +61,7 @@ public class HomePageTest extends TestBase {
 		softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("blogURL"), "failed to Blog services");
 
 		// 5. click on Contact page and assert
-		ContactPage contactPage = demoHomePage.clickOnContactMenu();
+		 demoHomePage.clickOnContactMenu();
 		softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("contactURL"),
 				"failed to laod contact services");
 
@@ -129,7 +130,7 @@ public class HomePageTest extends TestBase {
 	@Test(priority = 6)
 	public void verifyFooterMenue() throws InterruptedException {
 	}
-	
+
 	@Test(priority = 7)
 	public void verifyFooterMenue2() throws InterruptedException {
 	}

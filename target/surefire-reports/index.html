@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-passed">Surefire suite</span>
+            <a href="#" panel-name="suite-QM" class="navigator-link">
+              <span class="suite-name border-failed">QM</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
-                    <span>[unset file name]</span>
+                  <a href="#" panel-name="test-xml-QM" class="navigator-link ">
+                    <span>D:\Workspace-2\QAMARALMADEENA\testnngg.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-QM" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-QM" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-QM" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-QM" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-QM" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-QM" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,91 +92,60 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">15 methods,   15 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-QM" class="hide-methods failed suite-QM"> (hide)</a> <!-- hide-methods failed suite-QM -->
+                      <a href="#" panel-name="suite-QM" class="show-methods failed suite-QM"> (show)</a> <!-- show-methods failed suite-QM -->
+                    </span>
+                    <div class="method-list-content failed suite-QM">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-QM" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyHeaderMenue">verifyHeaderMenue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-QM -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-QM" class="hide-methods passed suite-QM"> (hide)</a> <!-- hide-methods passed suite-QM -->
+                      <a href="#" panel-name="suite-QM" class="show-methods passed suite-QM"> (show)</a> <!-- show-methods passed suite-QM -->
                     </span>
-                    <div class="method-list-content passed suite-Surefire_suite">
+                    <div class="method-list-content passed suite-QM">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyAboutMenue">verifyAboutMenue</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-QM" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyAboutMenue">verifyAboutMenue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.BusinessSetUpTest" class="method navigator-link" hash-for-method="verifyAttestationSection">verifyAttestationSection</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-QM" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyFooterMenue">verifyFooterMenue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.VisaServiceTest" class="method navigator-link" hash-for-method="verifyFamilVisa">verifyFamilVisa</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-QM" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyFooterMenue2">verifyFooterMenue2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyFooterMenue">verifyFooterMenue</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-QM" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyGrowExponentiallyMenue">verifyGrowExponentiallyMenue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyGrowExponentiallyMenue">verifyGrowExponentiallyMenue</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-QM" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyHeroWidgetMenue">verifyHeroWidgetMenue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyHeaderMenue">verifyHeaderMenue</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-QM" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyOurServicesMenue">verifyOurServicesMenue</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyHeroWidgetMenue">verifyHeroWidgetMenue</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.BusinessSetUpTest" class="method navigator-link" hash-for-method="verifyNewBusinessSetupSection">verifyNewBusinessSetupSection</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.HomePageTest" class="method navigator-link" hash-for-method="verifyOurServicesMenue">verifyOurServicesMenue</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.BusinessSetUpTest" class="method navigator-link" hash-for-method="verifyTranslationServiceSection">verifyTranslationServiceSection</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.UmrahPackageTest" class="method navigator-link" hash-for-method="verifyUmrahByAir">verifyUmrahByAir</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.UmrahPackageTest" class="method navigator-link" hash-for-method="verifyUmrahByAirWithLuxuary">verifyUmrahByAirWithLuxuary</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.UmrahPackageTest" class="method navigator-link" hash-for-method="verifyUmrahByBus">verifyUmrahByBus</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.VisaServiceTest" class="method navigator-link" hash-for-method="verifyVisaChangeByAir">verifyVisaChangeByAir</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.qa.testSCripts.VisaServiceTest" class="method navigator-link" hash-for-method="verifyVisitVisa">verifyVisitVisa</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                    </div> <!-- method-list-content passed suite-QM -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -187,66 +156,45 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-passed">
+        <div panel-name="suite-QM" class="panel QM">
+          <div class="suite-QM-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.testSCripts.BusinessSetUpTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.testSCripts.HomePageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyAttestationSection">
-                  </a> <!-- verifyAttestationSection -->
-                  <span class="method-name">verifyAttestationSection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyNewBusinessSetupSection">
-                  </a> <!-- verifyNewBusinessSetupSection -->
-                  <span class="method-name">verifyNewBusinessSetupSection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyTranslationServiceSection">
-                  </a> <!-- verifyTranslationServiceSection -->
-                  <span class="method-name">verifyTranslationServiceSection</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.testSCripts.UmrahPackageTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUmrahByAir">
-                  </a> <!-- verifyUmrahByAir -->
-                  <span class="method-name">verifyUmrahByAir</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUmrahByAirWithLuxuary">
-                  </a> <!-- verifyUmrahByAirWithLuxuary -->
-                  <span class="method-name">verifyUmrahByAirWithLuxuary</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyUmrahByBus">
-                  </a> <!-- verifyUmrahByBus -->
-                  <span class="method-name">verifyUmrahByBus</span>
+                  <a name="verifyHeaderMenue">
+                  </a> <!-- verifyHeaderMenue -->
+                  <span class="method-name">verifyHeaderMenue</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=127.0.6533.122)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ANEES&apos;, ip: &apos;192.168.0.116&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.122, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49923}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8c9dc713b44bbdea2dcbe4d32b69bc09
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy10.click(Unknown Source)
+	at com.qa.pages.DemoHomePage.clickOnVisaServiceMenu(DemoHomePage.java:41)
+	at com.qa.testSCripts.HomePageTest.verifyHeaderMenue(HomePageTest.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 34 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
+          </div> <!-- suite-QM-class-failed -->
+          <div class="suite-QM-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.qa.testSCripts.HomePageTest</span>
@@ -268,16 +216,16 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyGrowExponentiallyMenue">
-                  </a> <!-- verifyGrowExponentiallyMenue -->
-                  <span class="method-name">verifyGrowExponentiallyMenue</span>
+                  <a name="verifyFooterMenue2">
+                  </a> <!-- verifyFooterMenue2 -->
+                  <span class="method-name">verifyFooterMenue2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyHeaderMenue">
-                  </a> <!-- verifyHeaderMenue -->
-                  <span class="method-name">verifyHeaderMenue</span>
+                  <a name="verifyGrowExponentiallyMenue">
+                  </a> <!-- verifyGrowExponentiallyMenue -->
+                  <span class="method-name">verifyGrowExponentiallyMenue</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -295,169 +243,112 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-          <div class="suite-Surefire_suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.qa.testSCripts.VisaServiceTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyFamilVisa">
-                  </a> <!-- verifyFamilVisa -->
-                  <span class="method-name">verifyFamilVisa</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyVisaChangeByAir">
-                  </a> <!-- verifyVisaChangeByAir -->
-                  <span class="method-name">verifyVisaChangeByAir</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyVisitVisa">
-                  </a> <!-- verifyVisitVisa -->
-                  <span class="method-name">verifyVisitVisa</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-passed -->
-        </div> <!-- panel Surefire_suite -->
-        <div panel-name="test-xml-Surefire_suite" class="panel">
+          </div> <!-- suite-QM-class-passed -->
+        </div> <!-- panel QM -->
+        <div panel-name="test-xml-QM" class="panel">
           <div class="main-panel-header rounded-window-top">
+            <span class="header-content">D:\Workspace-2\QAMARALMADEENA\testnngg.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;QM&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.MyListeners&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Base.TestBase&quot;/&gt;
-      &lt;class name=&quot;com.qa.testSCripts.BlogTest&quot;/&gt;
-      &lt;class name=&quot;com.qa.testSCripts.BusinessSetUpTest&quot;/&gt;
-      &lt;class name=&quot;com.qa.testSCripts.ContactTest&quot;/&gt;
       &lt;class name=&quot;com.qa.testSCripts.HomePageTest&quot;/&gt;
-      &lt;class name=&quot;com.qa.testSCripts.UmrahPackageTest&quot;/&gt;
-      &lt;class name=&quot;com.qa.testSCripts.VisaServiceTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Surefire test --&gt;
-&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- QM --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Surefire_suite" class="panel">
+        <div panel-name="testlist-QM" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Surefire suite</span>
+            <span class="header-content">Tests for QM</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (7 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Surefire_suite" class="panel">
+        <div panel-name="group-QM" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Surefire suite</span>
+            <span class="header-content">Groups for QM</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Surefire_suite" class="panel">
+        <div panel-name="times-QM" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Surefire suite</span>
+            <span class="header-content">Times for QM</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Surefire_suite');
-function tableData_Surefire_suite() {
+suiteTableInitFunctions.push('tableData_QM');
+function tableData_QM() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(15);
+data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyHeaderMenue')
 data.setCell(0, 2, 'com.qa.testSCripts.HomePageTest')
-data.setCell(0, 3, 10089);
+data.setCell(0, 3, 5261);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyGrowExponentiallyMenue')
 data.setCell(1, 2, 'com.qa.testSCripts.HomePageTest')
-data.setCell(1, 3, 2611);
+data.setCell(1, 3, 2833);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verifyHeroWidgetMenue')
 data.setCell(2, 2, 'com.qa.testSCripts.HomePageTest')
-data.setCell(2, 3, 69);
+data.setCell(2, 3, 92);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyNewBusinessSetupSection')
-data.setCell(3, 2, 'com.qa.testSCripts.BusinessSetUpTest')
-data.setCell(3, 3, 4);
+data.setCell(3, 1, 'verifyFooterMenue2')
+data.setCell(3, 2, 'com.qa.testSCripts.HomePageTest')
+data.setCell(3, 3, 8);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyUmrahByAirWithLuxuary')
-data.setCell(4, 2, 'com.qa.testSCripts.UmrahPackageTest')
-data.setCell(4, 3, 2);
+data.setCell(4, 1, 'verifyOurServicesMenue')
+data.setCell(4, 2, 'com.qa.testSCripts.HomePageTest')
+data.setCell(4, 3, 7);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'verifyFamilVisa')
-data.setCell(5, 2, 'com.qa.testSCripts.VisaServiceTest')
-data.setCell(5, 3, 2);
+data.setCell(5, 1, 'verifyAboutMenue')
+data.setCell(5, 2, 'com.qa.testSCripts.HomePageTest')
+data.setCell(5, 3, 0);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'verifyVisaChangeByAir')
-data.setCell(6, 2, 'com.qa.testSCripts.VisaServiceTest')
-data.setCell(6, 3, 1);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyUmrahByAir')
-data.setCell(7, 2, 'com.qa.testSCripts.UmrahPackageTest')
-data.setCell(7, 3, 1);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyTranslationServiceSection')
-data.setCell(8, 2, 'com.qa.testSCripts.BusinessSetUpTest')
-data.setCell(8, 3, 0);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'verifyFooterMenue')
-data.setCell(9, 2, 'com.qa.testSCripts.HomePageTest')
-data.setCell(9, 3, 0);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'verifyVisitVisa')
-data.setCell(10, 2, 'com.qa.testSCripts.VisaServiceTest')
-data.setCell(10, 3, 0);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'verifyAttestationSection')
-data.setCell(11, 2, 'com.qa.testSCripts.BusinessSetUpTest')
-data.setCell(11, 3, 0);
-data.setCell(12, 0, 12)
-data.setCell(12, 1, 'verifyOurServicesMenue')
-data.setCell(12, 2, 'com.qa.testSCripts.HomePageTest')
-data.setCell(12, 3, 0);
-data.setCell(13, 0, 13)
-data.setCell(13, 1, 'verifyAboutMenue')
-data.setCell(13, 2, 'com.qa.testSCripts.HomePageTest')
-data.setCell(13, 3, 0);
-data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyUmrahByBus')
-data.setCell(14, 2, 'com.qa.testSCripts.UmrahPackageTest')
-data.setCell(14, 3, 0);
-window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+data.setCell(6, 1, 'verifyFooterMenue')
+data.setCell(6, 2, 'com.qa.testSCripts.HomePageTest')
+data.setCell(6, 3, 0);
+window.suiteTableData['QM']= { tableData: data, tableDiv: 'times-div-QM'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 12 seconds</span>
-              <div id="times-div-Surefire_suite">
-              </div> <!-- times-div-Surefire_suite -->
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-QM">
+              </div> <!-- times-div-QM -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Surefire_suite" class="panel">
+        <div panel-name="reporter-QM" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Surefire suite</span>
+            <span class="header-content">Reporter output for QM</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyGrowExponentiallyMenue</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">User able to see Title and Sub Title </span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
               <span class="reporter-method-name">verifyHeroWidgetMenue</span>
               <div class="reporter-method-output-div">
@@ -465,128 +356,59 @@ return data;
                 <span class="reporter-method-output">User clicked on Contact us button in hero widget module</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
-            <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyGrowExponentiallyMenue</span>
-              <div class="reporter-method-output-div">
-                <span class="reporter-method-output">User able to see Title and Sub Title </span>
-              </div> <!-- reporter-method-output-div -->
-            </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+        <div panel-name="ignored-methods-QM" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Surefire_suite" class="panel">
+        <div panel-name="chronological-QM" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.testSCripts.BusinessSetUpTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.qa.testSCripts.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyNewBusinessSetupSection</span>
-                <span class="method-start">8379 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyTranslationServiceSection</span>
-                <span class="method-start">8391 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyAttestationSection</span>
-                <span class="method-start">8391 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">8397 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.testSCripts.HomePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">8767 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">verifyHeaderMenue</span>
-                <span class="method-start">13836 ms</span>
+                <span class="method-start">18165 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyHeroWidgetMenue</span>
-                <span class="method-start">23925 ms</span>
+                <span class="method-start">23474 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyGrowExponentiallyMenue</span>
-                <span class="method-start">24000 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">26613 ms</span>
-              </div> <!-- configuration-class after -->
-              <div class="test-method">
-                <span class="method-name">verifyFooterMenue</span>
-                <span class="method-start">26613 ms</span>
+                <span class="method-start">23573 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyOurServicesMenue</span>
-                <span class="method-start">26613 ms</span>
+                <span class="method-start">26416 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">verifyAboutMenue</span>
-                <span class="method-start">26613 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.testSCripts.UmrahPackageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">26992 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verifyUmrahByBus</span>
-                <span class="method-start">32550 ms</span>
+                <span class="method-start">26426 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyUmrahByAir</span>
-                <span class="method-start">32555 ms</span>
+                <span class="method-name">verifyFooterMenue2</span>
+                <span class="method-start">26431 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyUmrahByAirWithLuxuary</span>
-                <span class="method-start">32560 ms</span>
+                <span class="method-name">verifyFooterMenue</span>
+                <span class="method-start">26431 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">32562 ms</span>
-              </div> <!-- configuration-class after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.qa.testSCripts.VisaServiceTest</div> <!-- chronological-class-name -->
-              <div class="configuration-class before">
-                <span class="method-name">setup</span>
-                <span class="method-start">32922 ms</span>
-              </div> <!-- configuration-class before -->
-              <div class="test-method">
-                <span class="method-name">verifyVisitVisa</span>
-                <span class="method-start">38024 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyFamilVisa</span>
-                <span class="method-start">38027 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verifyVisaChangeByAir</span>
-                <span class="method-start">38031 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-class after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">38033 ms</span>
+                <span class="method-start">26439 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
