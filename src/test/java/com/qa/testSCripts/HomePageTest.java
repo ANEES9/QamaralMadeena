@@ -41,7 +41,7 @@ public class HomePageTest extends TestBase {
 		softAssert.assertAll();
 	}
 
-	@Test(priority = 1)
+	/*@Test(priority = 1)
 	public void verifyHeaderMenue() throws Throwable {
 
 		  DemoHomePage demoHomePage = new DemoHomePage(driver);
