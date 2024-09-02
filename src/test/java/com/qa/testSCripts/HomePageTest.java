@@ -41,13 +41,13 @@ public class HomePageTest extends TestBase {
 		softAssert.assertAll();
 	}
 
-	/*@Test(priority = 1)
+	@Test(priority = 1)
 	public void verifyHeaderMenue() throws Throwable {
 
 		  DemoHomePage demoHomePage = new DemoHomePage(driver);
-	}
+	
 
-		 /* WebDriverWait wait =new WebDriverWait(driver,10) ;
+		  WebDriverWait wait =new WebDriverWait(driver,10) ;
 
 	      
 
@@ -78,7 +78,7 @@ public class HomePageTest extends TestBase {
 
 	        // Navigate back to Home Page
 	        demoHomePage.ClickOnHome();
-	    }*/
+	    }
 
 
 	    
