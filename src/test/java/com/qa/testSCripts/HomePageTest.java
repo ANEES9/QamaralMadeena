@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.List;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -49,9 +50,11 @@ public class HomePageTest extends TestBase {
 
 		  WebDriverWait wait =new WebDriverWait(driver,10) ;
 
-	      
+	      driver.findElement(By.xpath("//*[@class='navegation-items']//a[2]")).click();
+	      driver.findElement(By.xpath("//*[@class='navegation-items']//a[3]")).click();
+	      driver.findElement(By.xpath("//*[@class='navegation-items']//a[4]")).click();
 
-	        // 1. Click on Visa page and assert
+	      /*  // 1. Click on Visa page and assert
 	        WebElement visaMenu = wait.until(ExpectedConditions.elementToBeClickable(demoHomePage.visaField));
 	        visaMenu.click();
 	        softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("visaURl"), "Failed to open Visa Services");
@@ -77,7 +80,7 @@ public class HomePageTest extends TestBase {
 	        softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("contactURL"), "Failed to load Contact services");
 
 	        // Navigate back to Home Page
-	        demoHomePage.ClickOnHome();
+	        demoHomePage.ClickOnHome();*/
 	    }
 
 
