@@ -62,7 +62,7 @@ public class HomePage {
 		blogField.click();
 	}
 
-	@FindBy(xpath = "//*[@class='navegation-items']//a[6]")
+	@FindBy(xpath = "(//a[normalize-space()='Contact Us'])[1]")
 	private WebElement contactField;
 
 	public void ClickOnContact() {
@@ -94,14 +94,14 @@ public class HomePage {
 	// -------------------------------Growing Exponentially
 	// Starts------------------------------------------//
 
-	@FindBy(xpath = "//div[@class='header1']//h4")
+	@FindBy(xpath = "//*[contains(text(),'Growing')]")
 	private static WebElement titleOfGrowExpSection;
 
 	public String getTitleOfGrowExpSection() {
 		return titleOfGrowExpSection.getText();
 	}
 
-	@FindBy(xpath = "//div[@class='header1']//h1")
+	@FindBy(xpath = "//*[contains(text(),'Exponentially')]")
 	private WebElement SubTitleOfGrowExpSection;
 
 	public String getSubTitleOfGrowExpSection() {
@@ -223,7 +223,7 @@ public class HomePage {
 		// action class for moving down the page
 		Actions builder = new Actions(driver);
 
-		WebElement ele2 = driver.findElement(By.xpath("//*[text()='Choose Your Place']"));
+		WebElement ele2 = driver.findElement(By.xpath("//*[contains(text(),'Our Services')]"));
 		Action scrolldownTo = builder.moveToElement(ele2).click().sendKeys(Keys.PAGE_DOWN).build();
 		scrolldownTo.perform();
 
@@ -233,7 +233,7 @@ public class HomePage {
 		// action class for moving down the page
 		Actions builder = new Actions(driver);
 
-		WebElement ele3 = driver.findElement(By.xpath("//*[text()='Most Popular Tours']"));
+		WebElement ele3 = driver.findElement(By.xpath("//*[@class='slide ']/following::h1"));
 		Action scrolldownTo = builder.moveToElement(ele3).click().sendKeys(Keys.PAGE_DOWN).build();
 		scrolldownTo.perform();
 
@@ -243,8 +243,8 @@ public class HomePage {
 		// action class for moving down the page
 		Actions builder = new Actions(driver);
 
-		WebElement ele3 = driver.findElement(By.xpath("//*[contains(text(),'New Business Setup')]"));
-		Action scrolldownTo = builder.moveToElement(ele3).click().sendKeys(Keys.PAGE_DOWN).build();
+		WebElement ele4 = driver.findElement(By.xpath("//*[contains(text(),'Contact Us')][1]"));
+		Action scrolldownTo = builder.moveToElement(ele4).click().sendKeys(Keys.PAGE_DOWN).build();
 		scrolldownTo.perform();
 	}
 
@@ -252,8 +252,8 @@ public class HomePage {
 			// action class for moving down the page
 			Actions builder = new Actions(driver);
 
-			WebElement ele4 = driver.findElement(By.xpath("//*[text()='MavRick']"));
-			Action scrolldownTo = builder.moveToElement(ele4).click().sendKeys(Keys.PAGE_DOWN).build();
+			WebElement ele5 = driver.findElement(By.xpath("//*[text()='MavRick']"));
+			Action scrolldownTo = builder.moveToElement(ele5).click().sendKeys(Keys.PAGE_DOWN).build();
 			scrolldownTo.perform();
 
 	}

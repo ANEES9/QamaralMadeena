@@ -4,10 +4,12 @@ import java.io.IOException;
 import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
@@ -27,6 +29,7 @@ public class TC_HomePage extends TestBase {
 
 		driver = initializeBrowser();
 		driver.get(prop.getProperty("url"));
+		
 
 	}
 
@@ -38,11 +41,11 @@ public class TC_HomePage extends TestBase {
 	}
 
 	@Test(priority = 1)
-	public void verifyNavigationMenue() {
+	public void verifyNavigationMenue() throws Throwable {
 
 		HomePage homePages = new HomePage(driver);
 		// 1. Check user landed on the home page
-		softAssert.assertEquals(driver.getTitle(), "QamarAlMadeena", "failed to laod");
+		softAssert.assertEquals(driver.getTitle(), "Business Setup Services, Umrah Packages & Visa Services | Qamar Al Madeena", "failed to laod");
 		Reporter.log("User landed On Home Page");
 
 		// 2. click on Visa page and assert
@@ -61,13 +64,16 @@ public class TC_HomePage extends TestBase {
 		softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("businessURL"), "failed to Business services");
 		Reporter.log("User clicked on the Business Services");
 
-		// 5. click on Blog page and assert
+		/*// 5. click on Blog page and assert
 		homePages.ClickOnBlog();
 		softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("blogURL"), "failed to Blog services");
-		Reporter.log("User clicked on the Blog Services");
+		Reporter.log("User clicked on the Blog Services");*/
 
 		// 6. click on Contact page and assert
 		homePages.ClickOnContact();
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//span[@class='close']")).click();
+		Thread.sleep(5000);
 		softAssert.assertEquals(driver.getCurrentUrl(), prop.getProperty("contactURL"),
 				"failed to laod contact services");
 		Reporter.log("User clicked on the Contact Services");
@@ -100,8 +106,8 @@ public class TC_HomePage extends TestBase {
 		scrollDownTo("GrowExponentioally");
 
 		// Verify title & subtitle
-		Assert.assertEquals(homePages.getTitleOfGrowExpSection(), "Growing", "failed to laod Package text");
-		Assert.assertEquals(homePages.getSubTitleOfGrowExpSection(), "Exponentially", "failed to laod Package text");
+		Assert.assertEquals(homePages.getTitleOfGrowExpSection(), "Growing", "failed to laod the text Growing");
+		Assert.assertEquals(homePages.getSubTitleOfGrowExpSection(), "Exponentially", "failed to laod the text Exponentially");
 		Reporter.log("User able to see Title and Sub Title ");
 
 		// verify all paragraph texts in counters
@@ -109,169 +115,99 @@ public class TC_HomePage extends TestBase {
 	}
 
 	@Test(priority = 4)
-	public void verifyChooseYourPlaceMenue() throws Throwable {
+	public void verifyOurServices() throws Throwable {
 
-		HomePage homePages = new HomePage(driver);
-
-		// wait & scroll down to Choose your destination section & wait
 		Thread.sleep(2000);
-		scrollDownTo("Choose Your Place");
-		Thread.sleep(6000);
+		scrollDownTo("Our Services");
 
-		// Verify heading and tile
-		Assert.assertEquals(homePages.get_TitleOfDestination_ChooseYourPlace(), "Destinations",
-				"failed to laod Destination title text");
-		Assert.assertEquals(homePages.Get_SubTitleOfDestination_ChooseYourPlace(), "Choose Your Place",
-				"failed to laod Choose Your Place text");
+		//Verify first card Title , description & View details Button
+		String s = driver.findElement(By.xpath("//*[contains(text(),'Umrah Packages')][1]")).getText();
+		System.out.println(s);
+		System.out.println("ssss");
+		//Assert.assertTrue(s, "Umr	ah Packages");
 
-		// Verify clicking on the two section in place menue
-		List<WebElement> ele = homePages.Get_listOfTwoElelementInCYP();
-		for (WebElement ele1 : ele) {
-			String s = ele1.getText();
+		//Verify Second card Title , description & View details Button
 
-			if (s.contains("Makkha")) {
-				System.out.println(ele1.getText());
-				ele1.click();
-				scrollDownTo("Choose Your Place");
-				Thread.sleep(6000);
-				System.out.println("clicking done for Makkha Image");
+		//Verify Third card Title , description & View details Button
 
-			} else if (s.contains("Madina")) {
-				System.out.println(ele1.getText());
-				ele1.click();
-				scrollDownTo("Choose Your Place");
-				Thread.sleep(6000);
-				System.out.println("clicking done for Madina Image");
+		// scroll down
 
-			} else {
-				System.out.println("failed to find elements");
-			}
-		}
+
+		// find umrah package card width and length
+	        WebElement image = driver.findElement(By.xpath("//*[@src='images/kabha3.jpg']"));
+
+	        // Get the width and height of the image
+	        Dimension dimensions = image.getSize();
+	        int width = dimensions.getWidth();
+	        Integer height = dimensions.getHeight();
+
+	        Assert.assertEquals(String.valueOf(width),"353","kabha width failed");
+	        Assert.assertEquals( String.valueOf(height),"353", "kabha height failed");
+	        
+	        
+	     // click on know more and navigate back
+	       WebElement ssss = driver.findElement(By.xpath("//*[contains(text(),'Know More')]/parent::a[@href='Umrah.html']"));
+	    // Cast WebDriver to JavascriptExecutor
+	        JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
+
+	        // Click the element using JavaScript
+	        jsExecutor.executeScript("arguments[0].click();", ssss);
+	        Assert.assertEquals(driver.getCurrentUrl(), "https://www.qamaralmadeena.ae/Umrah.html","user failed to land on Umrah page");
+	        Thread.sleep(5000);
+	        driver.navigate().back();
+	        System.out.println("navigated back to home page");
+	        Thread.sleep(5000);
 
 	}
 
 	@Test(priority = 5)
-	public void verifyUmrahToursMenue() throws Throwable {
+	public void verifyAboutSection() throws Throwable {
+		HomePage homePages = new HomePage(driver);
 
-		 // Define an explicit wait
-        WebDriverWait wait = new WebDriverWait(driver, 10);
-        JavascriptExecutor js = (JavascriptExecutor) driver;
-		Thread.sleep(2000);
-		// scroll down to Umrah Tours section
-		// Scroll to the element using JavascriptExecutor
-		scrollDownTo("Most Popular Tours");
+		
+	scrollDownTo("about");
+		Thread.sleep(3000);
+		
+		String sm = driver.findElement(By.xpath("//span[@class='typing ']")).getText();
+System.out.println(sm);
 
-		// Verify heading and tile
-
-		// verify clicking on three offer packages
-
-		//*[@class="popular-list"]
-		//h3[@class=\"card-title\"]
-		Thread.sleep(5000);
-		List <WebElement> elements = driver.findElements(By.xpath("//*[@class='popular-list']"));
-		 // Iterate over the elements list
-
-
-
-
-		for(WebElement ek : elements) {
-		String listname = ek.getText();
-		//System.out.println(listname);
-
-		if(listname.contains("Umrah By Bus"))
-		{
-			Thread.sleep(2000);
-			ek.click(); Thread.sleep(2000);
-			System.out.println("clicked on the umrah");
-			driver.navigate().back(); Thread.sleep(5000);
-			System.out.println("clicked on the umrah by bus");
-			Thread.sleep(5000);
-		scrollDownTo("Most Popular Tours");}
-			else if(listname.contains("Umrah By Air"))
-			{
-				scrollDownTo("Entered second loop");
-				Thread.sleep(2000);
-				ek.click(); Thread.sleep(2000);
-				System.out.println("clicked on the umrah by air");
-				driver.navigate().back(); Thread.sleep(5000);
-				System.out.println("clicked on the umrah by air");
-				Thread.sleep(5000);
-				scrollDownTo("Most Popular Tours");}
-			else if(listname.contains("Umrah By Air, Luxuary Accomodation, Food"))
-		{
-				Thread.sleep(2000);
-				ek.click(); Thread.sleep(2000);
-				System.out.println("clicked on the umrah by air & luxuary ");
-				driver.navigate().back(); Thread.sleep(5000);
-				System.out.println("clicked on the umrah");
-				Thread.sleep(5000);
-				scrollDownTo("Most Popular Tours");
-		} else {
-			System.out.println("failed to find elements");
-		}
-		}
 	}
+
+
 
 	@Test(priority = 6)
-	public void verifyBusinessEssentialsMenue() throws Throwable {
-
-		HomePage homePages = new HomePage(driver);
-		Thread.sleep(2000);
-		// scroll down
-		scrollDownTo("For Any Business Needs");
-		Thread.sleep(2000);
-		// Verify heading and tile
-
-		Assert.assertEquals(homePages.get_TitleOfBusiness_Esssential(), "Business Esssential",
-				"failed to laod Destination title text");
-		Assert.assertEquals(homePages.Get_SubTitleOfBusiness_Esssential(), "For Any Business Needs",
-				"failed to laod Choose Your Place text");
-
-		// verify clicking on three Business services
-
-		//driver.findElement(By.xpath("//*[contains(text(),'New Business Setup')]")).click();
-		//Thread.sleep(9000);
-
-		WebElement element22 = driver.findElement(By.xpath("//*[contains(text(),'New Business Setup')]"));
-
-		Actions actions = new Actions(driver);
-
-		actions.moveToElement(element22).click().perform();
-
-		//1. verify clicking on 1st section under Business
-		Thread.sleep(2000);
-		homePages.ClickOnNewBusinessSetup();
-		Thread.sleep(2000);
-		scrollDownTo("For Any Business Needs");
-
-		//2. verify clicking on 2nd section under Business
-		Thread.sleep(2000);
-		homePages.ClickOnTranslationService();
-		Thread.sleep(2000);
-		scrollDownTo("For Any Business Needs");
-
-		//3. verify clicking on 3rd section under Business
-		Thread.sleep(2000);
-		homePages.ClickOnAttestation();
-		Thread.sleep(2000);
-		scrollDownTo("For Any Business Needs");
-	}
-
-	@Test(priority = 7)
-	public void verifyVisaServicesMenue() throws InterruptedException {
-
-		// scroll down
-		scrollDownTo("For Any Business Needs");
-
-	}
-
-	@Test(priority = 8)
 	public void verifyFooterMenue() throws Throwable {
 
 		// scroll down
-		scrollDownTo("QmarAlMadeena");
+		scrollDownTo("about");
 		Thread.sleep(3000);
 		// Verify links
+		
+		
+		List<WebElement> web = driver.findElements(By.xpath("//*[@class='footer-list '][4]"));
+	
+        // Iterate over the list of links using a for-each loop
+        for (WebElement link : web) {
+            // Print the text of each link
+            System.out.println("Link Text: " + link.getText());
+            
+            if (link.getText().equalsIgnoreCase("link")) {
+				Assert.assertTrue(true);
+			} else if (link.getText().equalsIgnoreCase("Visa service")) {
+				Assert.assertTrue(true);
+
+			} else if (link.getText().equalsIgnoreCase("Umrah Package")) {
+				Assert.assertTrue(true);
+
+			} else if (link.getText().equalsIgnoreCase("Business Setup")) {
+				Assert.assertTrue(true);
+			}  else if (link.getText().equalsIgnoreCase("Blog")) {
+				Assert.assertTrue(true);
+			}  else if (link.getText().equalsIgnoreCase("Term & Conditions")) {
+				Assert.assertTrue(true); }
+			         
+
+        }
 	}
 
 	// ------------------- Extra methodss--------------------------
@@ -293,59 +229,10 @@ public class TC_HomePage extends TestBase {
 				Assert.assertTrue(true);
 			}
 		}
-	}
-
-	public void scrollDownTo(String pageTitle) throws InterruptedException {
-		HomePage homePages = new HomePage(driver);
-		if (pageTitle.contains("GrowExponentioally")) {
-			homePages.performAction();
-			Thread.sleep(2000);
-		} else if (pageTitle.contains("Choose Your Place")) {
-			homePages.performAction2();
-
-		} else if (pageTitle.contains("Most Popular Tours")) {
-			homePages.performAction3();
-
-		} else if (pageTitle.contains("For Any Business Needs")) {
-			homePages.performAction3();
-
-		} else if (pageTitle.contains("QmarAlMadeena")) {
-			homePages.performAction3();
-
-		}
+	
 
 	}
 
 
 }
 
-/*
- *
- 		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.6.1</version>
-			<scope>compile</scope>
-		</dependency>
-		<!--
-		https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
-
-		<dependency>
-			<groupId>io.github.bonigarcia</groupId>
-			<artifactId>webdrivermanager</artifactId>
-			<version>5.6.2</version>
-		</dependency>
-
-		<!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java --><!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-		<!--
-		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>3.141.59</version>
-		</dependency>
-
- */

@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[User landed On Home Page]]>
+    </line>
+    <line>
+      <![CDATA[User clicked on the Visa Services]]>
+    </line>
+    <line>
+      <![CDATA[User clicked on the Visa Services]]>
+    </line>
+    <line>
+      <![CDATA[User clicked on the Business Services]]>
+    </line>
+    <line>
+      <![CDATA[User clicked on the Contact Services]]>
+    </line>
+    <line>
+      <![CDATA[User landed back to Home Page]]>
+    </line>
     <line>
       <![CDATA[User able to see Umrah package Title and Sub Title]]>
     </line>
@@ -10,21 +28,42 @@
     <line>
       <![CDATA[User able to see Title and Sub Title ]]>
     </line>
+    <line>
+      <![CDATA[User clicked on the Visa Services]]>
+    </line>
   </reporter-output>
-  <suite started-at="2024-09-03T00:46:31 IST" name="Default suite" finished-at="2024-09-03T00:46:52 IST" duration-ms="21157">
+  <suite started-at="2024-10-12T13:33:21 IST" name="QM" finished-at="2024-10-12T13:34:16 IST" duration-ms="54582">
     <groups>
     </groups>
-    <test started-at="2024-09-03T00:46:31 IST" name="Default test" finished-at="2024-09-03T00:46:52 IST" duration-ms="21157">
-      <class name="com.qa.testSCripts.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:31 IST" name="setup" finished-at="2024-09-03T00:46:38 IST" duration-ms="7610" status="PASS">
+    <test started-at="2024-10-12T13:33:21 IST" name="Test" finished-at="2024-10-12T13:34:16 IST" duration-ms="54582">
+      <class name="com.qa.testSCripts.TC_HomePage">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.testSCripts.TC_HomePage@34bde49d]" started-at="2024-10-12T13:33:21 IST" name="setup" finished-at="2024-10-12T13:33:29 IST" duration-ms="8166" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verifyHeaderMenue()[pri:1, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:38 IST" name="verifyHeaderMenue" finished-at="2024-09-03T00:46:49 IST" duration-ms="10697" status="PASS">
+        <test-method signature="verifyNavigationMenue()[pri:1, instance:com.qa.testSCripts.TC_HomePage@34bde49d]" started-at="2024-10-12T13:33:29 IST" name="verifyNavigationMenue" finished-at="2024-10-12T13:33:44 IST" duration-ms="14326" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[User landed On Home Page]]>
+            </line>
+            <line>
+              <![CDATA[User clicked on the Visa Services]]>
+            </line>
+            <line>
+              <![CDATA[User clicked on the Visa Services]]>
+            </line>
+            <line>
+              <![CDATA[User clicked on the Business Services]]>
+            </line>
+            <line>
+              <![CDATA[User clicked on the Contact Services]]>
+            </line>
+            <line>
+              <![CDATA[User landed back to Home Page]]>
+            </line>
           </reporter-output>
-        </test-method> <!-- verifyHeaderMenue -->
-        <test-method signature="verifyHeroWidgetMenue()[pri:2, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:49 IST" name="verifyHeroWidgetMenue" finished-at="2024-09-03T00:46:49 IST" duration-ms="50" status="PASS">
+        </test-method> <!-- verifyNavigationMenue -->
+        <test-method signature="verifyHeroWidgetMenue()[pri:2, instance:com.qa.testSCripts.TC_HomePage@34bde49d]" started-at="2024-10-12T13:33:44 IST" name="verifyHeroWidgetMenue" finished-at="2024-10-12T13:33:44 IST" duration-ms="72" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[User able to see Umrah package Title and Sub Title]]>
@@ -34,34 +73,63 @@
             </line>
           </reporter-output>
         </test-method> <!-- verifyHeroWidgetMenue -->
-        <test-method signature="verifyGrowExponentiallyMenue()[pri:3, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:49 IST" name="verifyGrowExponentiallyMenue" finished-at="2024-09-03T00:46:51 IST" duration-ms="2432" status="PASS">
+        <test-method signature="verifyGrowExponentiallyMenue()[pri:3, instance:com.qa.testSCripts.TC_HomePage@34bde49d]" started-at="2024-10-12T13:33:44 IST" name="verifyGrowExponentiallyMenue" finished-at="2024-10-12T13:33:46 IST" duration-ms="2534" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[User able to see Title and Sub Title ]]>
             </line>
           </reporter-output>
         </test-method> <!-- verifyGrowExponentiallyMenue -->
-        <test-method signature="verifyOurServicesMenue()[pri:4, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:51 IST" name="verifyOurServicesMenue" finished-at="2024-09-03T00:46:51 IST" duration-ms="2" status="PASS">
+        <test-method signature="verifyOurServices()[pri:4, instance:com.qa.testSCripts.TC_HomePage@34bde49d]" started-at="2024-10-12T13:33:46 IST" name="verifyOurServices" finished-at="2024-10-12T13:33:59 IST" duration-ms="12906" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyOurServicesMenue -->
-        <test-method signature="verifyAboutMenue()[pri:5, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:51 IST" name="verifyAboutMenue" finished-at="2024-09-03T00:46:51 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- verifyOurServices -->
+        <test-method signature="verifyAboutSection()[pri:5, instance:com.qa.testSCripts.TC_HomePage@34bde49d]" started-at="2024-10-12T13:33:59 IST" name="verifyAboutSection" finished-at="2024-10-12T13:34:02 IST" duration-ms="3296" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyAboutMenue -->
-        <test-method signature="verifyFooterMenue()[pri:6, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:51 IST" name="verifyFooterMenue" finished-at="2024-09-03T00:46:51 IST" duration-ms="2" status="PASS">
+        </test-method> <!-- verifyAboutSection -->
+        <test-method signature="verifyFooterMenue()[pri:6, instance:com.qa.testSCripts.TC_HomePage@34bde49d]" started-at="2024-10-12T13:34:02 IST" name="verifyFooterMenue" finished-at="2024-10-12T13:34:06 IST" duration-ms="3419" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyFooterMenue -->
-        <test-method signature="verifyFooterMenue2()[pri:7, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:51 IST" name="verifyFooterMenue2" finished-at="2024-09-03T00:46:51 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyFooterMenue2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testSCripts.HomePageTest@409bf450]" started-at="2024-09-03T00:46:51 IST" name="tearDown" finished-at="2024-09-03T00:46:52 IST" duration-ms="284" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testSCripts.TC_HomePage@34bde49d]" started-at="2024-10-12T13:34:06 IST" name="tearDown" finished-at="2024-10-12T13:34:07 IST" duration-ms="811" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.qa.testSCripts.HomePageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.qa.testSCripts.TC_HomePage -->
+      <class name="com.qa.testSCripts.VisaServiceTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.qa.testSCripts.VisaServiceTest@1be2019a]" started-at="2024-10-12T13:34:07 IST" name="setup" finished-at="2024-10-12T13:34:12 IST" duration-ms="4993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyVisaPageTitle()[pri:1, instance:com.qa.testSCripts.VisaServiceTest@1be2019a]" started-at="2024-10-12T13:34:12 IST" name="verifyVisaPageTitle" finished-at="2024-10-12T13:34:12 IST" duration-ms="401" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[User clicked on the Visa Services]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyVisaPageTitle -->
+        <test-method signature="verifyVisitVisa()[pri:2, instance:com.qa.testSCripts.VisaServiceTest@1be2019a]" started-at="2024-10-12T13:34:12 IST" name="verifyVisitVisa" finished-at="2024-10-12T13:34:13 IST" duration-ms="1002" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyVisitVisa -->
+        <test-method signature="verifyVisaChangeByAir()[pri:3, instance:com.qa.testSCripts.VisaServiceTest@1be2019a]" started-at="2024-10-12T13:34:13 IST" name="verifyVisaChangeByAir" finished-at="2024-10-12T13:34:14 IST" duration-ms="615" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyVisaChangeByAir -->
+        <test-method signature="verifyFamilyVisa()[pri:4, instance:com.qa.testSCripts.VisaServiceTest@1be2019a]" started-at="2024-10-12T13:34:14 IST" name="verifyFamilyVisa" finished-at="2024-10-12T13:34:14 IST" duration-ms="514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFamilyVisa -->
+        <test-method signature="verifyVisaChangeByBus()[pri:5, instance:com.qa.testSCripts.VisaServiceTest@1be2019a]" started-at="2024-10-12T13:34:14 IST" name="verifyVisaChangeByBus" finished-at="2024-10-12T13:34:15 IST" duration-ms="632" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyVisaChangeByBus -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testSCripts.VisaServiceTest@1be2019a]" started-at="2024-10-12T13:34:15 IST" name="tearDown" finished-at="2024-10-12T13:34:16 IST" duration-ms="730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testSCripts.VisaServiceTest -->
+    </test> <!-- Test -->
+  </suite> <!-- QM -->
 </testng-results>

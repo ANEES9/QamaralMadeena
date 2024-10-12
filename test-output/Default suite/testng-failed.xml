@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.qa.testSCripts.HomePageTest">
+      <class name="com.qa.testSCripts.VisaServiceTest">
         <methods>
-          <include name="tearDown"/>
+          <include name="verifyVisitVisaCard"/>
           <include name="setup"/>
-          <include name="verifyHeaderMenue"/>
+          <include name="tearDown"/>
+          <include name="verifyVisaPageTitle"/>
+          <include name="verifyChangeByAir"/>
         </methods>
-      </class> <!-- com.qa.testSCripts.HomePageTest -->
+      </class> <!-- com.qa.testSCripts.VisaServiceTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

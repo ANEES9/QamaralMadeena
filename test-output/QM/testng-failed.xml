@@ -6,13 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.qa.testSCripts.TC_HomePage">
+      <class name="com.qa.testSCripts.VisaServiceTest">
         <methods>
-          <include name="verifyChooseYourPlaceMenue"/>
+          <include name="verifyVisitVisaCard"/>
           <include name="setup"/>
           <include name="tearDown"/>
+          <include name="verifyChangeByAir"/>
         </methods>
-      </class> <!-- com.qa.testSCripts.TC_HomePage -->
+      </class> <!-- com.qa.testSCripts.VisaServiceTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [QM] -->

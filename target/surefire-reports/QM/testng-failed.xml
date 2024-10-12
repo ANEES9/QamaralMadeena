@@ -10,9 +10,16 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="verifyHeaderMenue"/>
+          <include name="verifyChooseYourPlaceMenue"/>
         </methods>
       </class> <!-- com.qa.testSCripts.HomePageTest -->
+      <class name="com.qa.testSCripts.VisaServiceTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="verifyVisitVisa"/>
+        </methods>
+      </class> <!-- com.qa.testSCripts.VisaServiceTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [QM] -->
